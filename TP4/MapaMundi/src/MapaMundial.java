@@ -21,14 +21,7 @@ public class MapaMundial {
     
     public void inicializar() {
         
-        /*
-		List<Pais> paisesAmerica = new ArrayList<Pais>();
-        List<Pais> paisesEuropa = new ArrayList<Pais>();
-        List<Pais> paisesAsia = new ArrayList<Pais>();
-        List<Pais> paisesAfrica = new ArrayList<Pais>();
-        List<Pais> paisesOceania = new ArrayList<Pais>();
-        List<Pais> paisesAntartida = new ArrayList<Pais>();      
-        */
+      
 
         /*Instanciamos e inicializamos los continentes */
         continentes.add(new Continente("America", paisesAmerica));

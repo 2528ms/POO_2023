@@ -37,13 +37,14 @@ public class MatrixMultiplication{
         // Esperar a que todos los hilos terminen
         try {
             for (int i = 0; i < numRowsA; i++) {
-                threads[i].join();
+                threads[i].join(); //El método join() se utiliza para esperar a que un hilo termine su ejecución 
+                                   //antes de continuar con el flujo principal del programa
                 System.out.println("Finalizo hilo "+i);
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        }catch (InterruptedException e) {
+            e.getMessage();
         }
-        
+
         // Imprimir la matriz resultante
         System.out.println("Matriz resultante:");
         for (int i = 0; i < numRowsA; i++) {
